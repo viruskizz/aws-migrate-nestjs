@@ -97,7 +97,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "aws-migration-sls-deployment",
-          "S3Key": "serverless/serverless-example/dev/1688225343292-2023-07-01T15:29:03.292Z/serverless-example.zip"
+          "S3Key": "serverless/serverless-example/dev/1688279028936-2023-07-02T06:23:48.936Z/serverless-example.zip"
         },
         "Handler": "src/lambda.handler",
         "Runtime": "nodejs16.x",
@@ -120,7 +120,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "aws-migration-sls-deployment",
-          "S3Key": "serverless/serverless-example/dev/1688225343292-2023-07-01T15:29:03.292Z/serverless-example.zip"
+          "S3Key": "serverless/serverless-example/dev/1688279028936-2023-07-02T06:23:48.936Z/serverless-example.zip"
         },
         "Handler": "src/lambda.handler",
         "Runtime": "nodejs16.x",
@@ -138,24 +138,24 @@
         "ProductLogGroup"
       ]
     },
-    "ProfileLambdaVersionJSxEYG954RcMvqWzlJjkIDvuokN5USWYMwa21feLyo": {
+    "ProfileLambdaVersionGZJWEwRGVLRyAqizrwNdPYJflnrbs2HgV4Dx7aB7yM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ProfileLambdaFunction"
         },
-        "CodeSha256": "FYGvVYAliHG3xie3LQ7J5+4x28FwYDAb8OJSWDFGyDI="
+        "CodeSha256": "boKypFmnnVTFRfAo5pOiAb17xoxnn6aHYBBl5a39P9A="
       }
     },
-    "ProductLambdaVersion9LM2jl8qdTNjeMVi15JZxPhL11dc3R0WaKF2SNWU4": {
+    "ProductLambdaVersionVzTVihLkapcnB6lM7SMyg8YB0jUbNExYb6ukKHvU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ProductLambdaFunction"
         },
-        "CodeSha256": "FYGvVYAliHG3xie3LQ7J5+4x28FwYDAb8OJSWDFGyDI="
+        "CodeSha256": "boKypFmnnVTFRfAo5pOiAb17xoxnn6aHYBBl5a39P9A="
       }
     },
     "ApiGatewayRestApi": {
@@ -408,7 +408,7 @@
         "ProductLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1688225327839": {
+    "ApiGatewayDeployment1688279012608": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -508,7 +508,7 @@
     "ProfileLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ProfileLambdaVersionJSxEYG954RcMvqWzlJjkIDvuokN5USWYMwa21feLyo"
+        "Ref": "ProfileLambdaVersionGZJWEwRGVLRyAqizrwNdPYJflnrbs2HgV4Dx7aB7yM"
       },
       "Export": {
         "Name": "sls-serverless-example-dev-ProfileLambdaFunctionQualifiedArn"
@@ -517,7 +517,7 @@
     "ProductLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ProductLambdaVersion9LM2jl8qdTNjeMVi15JZxPhL11dc3R0WaKF2SNWU4"
+        "Ref": "ProductLambdaVersionVzTVihLkapcnB6lM7SMyg8YB0jUbNExYb6ukKHvU"
       },
       "Export": {
         "Name": "sls-serverless-example-dev-ProductLambdaFunctionQualifiedArn"

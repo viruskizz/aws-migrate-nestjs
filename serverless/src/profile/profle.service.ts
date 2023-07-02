@@ -20,8 +20,8 @@ export class ProfileService {
     return this.data;
   }
 
-  get(id: number) {
-
+  getOne(id: number): Profile | undefined {
+    return this.data.find((e) => e.id === id);
   }
 
   getTest(): string {

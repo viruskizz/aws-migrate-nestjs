@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, NotFoundException, Param } from '@nestjs/common';
 import { ProfileService } from './profle.service';
+import { Profile } from './profile.interface';
 
 @Controller('profiles')
 export class ProfileController {
@@ -11,9 +12,18 @@ export class ProfileController {
     return this.profileService.getTest();
   }
 
+  @Get(':id')
+  getProfile(@Param('id') id: number): Profile | any {
+    const profile = this.profileService.getOne(+id);
+    if (!profile) {
+      throw new NotFoundException('Not found this use id');
+    }
+    return profile;
+  }
+
   @Get()
   getAll(): any[] {
     console.log('RUN');
-    return [];
+    return this.profileService.getAll();
   }
 }
