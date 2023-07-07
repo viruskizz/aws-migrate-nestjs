@@ -113,7 +113,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "aws-migration-sls-deployment",
-                "S3Key": "serverless/serverless-example/dev/1688279028936-2023-07-02T06:23:48.936Z/serverless-example.zip"
+                "S3Key": "serverless/serverless-example/dev/1688306354521-2023-07-02T13:59:14.521Z/serverless-example.zip"
               },
               "Handler": "src/lambda.handler",
               "Runtime": "nodejs16.x",
@@ -136,7 +136,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "aws-migration-sls-deployment",
-                "S3Key": "serverless/serverless-example/dev/1688279028936-2023-07-02T06:23:48.936Z/serverless-example.zip"
+                "S3Key": "serverless/serverless-example/dev/1688306354521-2023-07-02T13:59:14.521Z/serverless-example.zip"
               },
               "Handler": "src/lambda.handler",
               "Runtime": "nodejs16.x",
@@ -424,7 +424,7 @@
               "ProductLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1688279012608": {
+          "ApiGatewayDeployment1688306336022": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -659,7 +659,7 @@
     "artifact": "/home/araiva/aws-migrate-nestjs/serverless/.build/.serverless/serverless-example.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-example/dev/1688279028936-2023-07-02T06:23:48.936Z",
+    "artifactDirectoryName": "serverless/serverless-example/dev/1688306354521-2023-07-02T13:59:14.521Z",
     "artifact": "serverless-example.zip"
   }
 }
