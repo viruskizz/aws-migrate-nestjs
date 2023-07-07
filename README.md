@@ -125,7 +125,27 @@ functions:
 npm install --save-dev serverless-offline serverless-plugin-typescript
 ```
 
+6. start local test
+
+```sh
+serverless offline
+```
+
+7. deploy serverless application
+
+```sh
+serverless deploy
+```
+
+8. Grab output url and test run your production
+
+*** if your updated code is not update, delete `.build` and `.serverless` to clear build cached and run it again.
+
+### Finally it done!
+
 You also read [NestJS document]
+
+_~~~ Thank you ~~~_
 
 <!-- Referrence Section -->
 [Migrating from container to serverless to reduce cost]: https://1drv.ms/p/s!AjQn55CO5TAvwgAxzdiO_LCiuRcz?e=2lgF0r
